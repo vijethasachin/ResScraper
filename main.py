@@ -1,10 +1,6 @@
 """ vtu web scraper"""
 
-""" tkinter UI added.
-revals results included.
-results for the requested semster is displayed"""
-
-import bs4
+import bs4    
 import requests
 from lxml import html
 from tkinter import *
@@ -19,10 +15,7 @@ def outputToExcel(fname):
     worksheet = workbook.add_worksheet()
     # Start from the first cell. Rows and columns are zero indexed.
     row = 0
-
     # Iterate over the data write it out row by row.
-
-
     for myRow in (resArray.items()):
         col=0
         for key in (myRow[1].keys()):
